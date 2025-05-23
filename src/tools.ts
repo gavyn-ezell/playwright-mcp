@@ -69,19 +69,19 @@ export const visionTools: Tool<any>[] = [
 ];
 
 export const visionWithSnapshotTools: Tool<any>[] = [
-  ...common(false),
+  ...common(true),
   ...console,
-  ...dialogs(false),
-  ...evaluate(false),
-  ...files(false),
+  ...dialogs(true),
+  ...evaluate(true),
+  ...files(true),
   ...install,
-  ...keyboard(false),
-  ...navigate(false),
+  ...keyboard(true),
+  ...navigate(true),
   ...network,
   ...pdf,
   ...snapshot,
-  ...tabs(false),
+  ...tabs(true),
   ...testing,
   ...vision,
-  ...wait(false),
+  ...wait(true),
 ];
